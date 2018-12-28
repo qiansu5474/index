@@ -169,7 +169,27 @@
         })
     </script>
 
+<script>
+$(document).ready(function() {
 
+//設定移動秒數 是否循環播放
+    $(".carousel").carousel({
+         interval:2000,
+         wrap:false
+    })
+
+//手機swiper設定-----------------
+    $("#你的幻燈片ID名稱").swiperight(function() {
+        $(this).carousel('prev');
+    });
+
+    $("#你的幻燈片ID名稱").swipeleft(function() {
+        $(this).carousel('next');
+    });
+//------------------------------------
+});
+
+</script>
 
 
 </body>
