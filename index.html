@@ -43,6 +43,15 @@
                 right: 0;
             }
         }
+        
+        .slide {
+            margin-bottom: 20px;
+        }
+        
+        .thumbnail {
+            background-color: #aaf;
+            font-style: initial;
+        }
     </style>
 
 
@@ -104,50 +113,128 @@
 
 
 
-<div id="carousel-id" class="carousel slide" data-ride="carousel">
-    <!-- 幻燈片小圓點區 -->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-id" data-slide-to="0" class=""></li>
-        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-        <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
-    </ol>
-    <!-- 幻燈片主圖區 -->
-    <div class="carousel-inner">
-        <div class="item">
-           <img src="https://picsum.photos/2800/700/?random=1">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>CSS可樂好喝超爽快</h1>
-                    <p>你喝過了嗎？</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+    <div id="carousel-id" class="carousel slide" data-ride="carousel">
+        <!-- 幻燈片小圓點區 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+        </ol>
+        <!-- 幻燈片主圖區 -->
+        <div class="carousel-inner">
+            <div class="item">
+                <img src="https://picsum.photos/2800/700/?random=1">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>CSS可樂好喝超爽快</h1>
+                        <p>你喝過了嗎？</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/2800/700/?random=2">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>CSS可樂的外掛真方便</h1>
+                        <p>你安裝了嗎？</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">更多</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item active">
+                <img src="https://picsum.photos/2800/700/?random=3">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>我是標題喔～自己改文案吧</h1>
+                        <p>我是內文喔，你可以把字打在這裡呦</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">詳細內容</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="item">
-           <img src="https://picsum.photos/2800/700/?random=2">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>CSS可樂的外掛真方便</h1>
-                    <p>你安裝了嗎？</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">更多</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="item active">
-           <img src="https://picsum.photos/2800/700/?random=3">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>我是標題喔～自己改文案吧</h1>
-                    <p>我是內文喔，你可以把字打在這裡呦</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">詳細內容</a></p>
-                </div>
-            </div>
-        </div>
+        <!-- 上下頁控制區 -->
+        <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
-    <!-- 上下頁控制區 -->
-    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=1">
+                    <div class="caption">
+                        <h2>資二2 22 徐千素</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=2">
+                    <div class="caption">
+                        <h2>標題</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=3">
+                    <div class="caption">
+                        <h2>標題</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=4">
+                    <div class="caption">
+                        <h2>標題</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Row -->
+    </div>
+    <!--Container -->
+
+
+    <ul class="pager">
+        <li><a href="#">上一頁</a></li>
+        <li><a href="#">下一頁</a></li>
+    </ul>
+
+
+
 
 
 
@@ -169,27 +256,23 @@
         })
     </script>
 
-<script>
-$(document).ready(function() {
-
-//設定移動秒數 是否循環播放
-    $(".carousel").carousel({
-         interval:2000,
-         wrap:false
-    })
-
-//手機swiper設定-----------------
-    $("#你的幻燈片ID名稱").swiperight(function() {
-        $(this).carousel('prev');
-    });
-
-    $("#你的幻燈片ID名稱").swipeleft(function() {
-        $(this).carousel('next');
-    });
-//------------------------------------
-});
-
-</script>
+    <script>
+        $(document).ready(function() {
+            //設定移動秒數 是否循環播放
+            $(".carousel").carousel({
+                    interval: 2000,
+                    wrap: false
+                })
+                //手機swiper設定-----------------
+            $("#你的幻燈片ID名稱").swiperight(function() {
+                $(this).carousel('prev');
+            });
+            $("#你的幻燈片ID名稱").swipeleft(function() {
+                $(this).carousel('next');
+            });
+            //------------------------------------
+        });
+    </script>
 
 
 </body>
